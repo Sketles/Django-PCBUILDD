@@ -124,36 +124,36 @@
         <!--ESPACIO-->
       </div>
       <div class="col-sm-2">
-        <img src="logos-img/logoprincipal.png" width="200">
+        <img src="{% static 'core/Imagenes/logos-img/logoprincipal.png' %}" width="200">
         <p class="py-5">Encuentra los mejores artículos Gamers para potenciar tu PC. Compra Online y recíbelo en tu domicilio!</p>
       </div>
 
       <div class="col-sm-2">
         <h5 class="py-5">Informacion</h5>
-        <a href="quienes-somos.html"><p class="colorchange">Quienes Somos</p></a>
-        <a href="termino-y-condiciones.html"><p class="colorchange">Terminos y condiciones</p></a>
-        <a href="politica-de-reembolso.html"><p class="colorchange">Politica de reembolso</p></a>
+        <a href="{% url 'quienessomos' %}"><p class="colorchange">Quienes Somos</p></a>
+        <a href="{% url 'politicadereembolso' %}"><p class="colorchange">Terminos y condiciones</p></a>
+        <a href="{% url 'politicadereembolso' %}"><p class="colorchange">Politica de reembolso</p></a>
 
         
       </div>
 
       <div class="col-sm-2">
         <h5 class="py-5">Nuestros Productos</h5>
-        <a href="discossd.html"><p class="colorchange">SSD</p></a>
-        <a href="memorias-ram.html"><p class="colorchange">Memorias</p></a>
-        <a href="placas-madres.html"><p class="colorchange">Placas Madre</p></a>
-        <a href="procesadores.html"><p class="colorchange">Procesadores</p></a>
-        <a href="tarjetasdevideo.html"><p class="colorchange">Tarjetas de Video</p></a>
+        <a href="{% url 'discossd' %}"><p class="colorchange">SSD</p></a>
+        <a href="{% url 'memoriasram' %}"><p class="colorchange">Memorias</p></a>
+        <a href="{% url 'placasmadres' %}"><p class="colorchange">Placas Madre</p></a>
+        <a href="{% url 'procesadores' %}"><p class="colorchange">Procesadores</p></a>
+        <a href="{% url 'tarjetasdevideo' %}"><p class="colorchange">Tarjetas de Video</p></a>
       </div>
 
       <div class="col-sm-2">
         <h5 class="py-5">Contacto</h5>
-        <a href="https://www.facebook.com/"><img src="Logos-img/Redes Sociales/facebook.png" width="50"></a>
-        <a href="https://www.instagram.com/"><img src="Logos-img/Redes Sociales/instagram.png" width="50"></a>
-        <a href="https://www.whatsapp.com/?lang=es"><img src="Logos-img/Redes Sociales/whatsapp.png" width="50"></a>
+        <a href="https://www.facebook.com/"><img src="{% static 'core/Imagenes/Logos-img/Redes Sociales/facebook.png' %}" width="50"></a>
+        <a href="https://www.instagram.com/"><img src="{% static 'core/Imagenes/Logos-img/Redes Sociales/instagram.png' %}" width="50"></a>
+        <a href="https://www.whatsapp.com/?lang=es"><img src="{% static 'core/Imagenes/Logos-img/Redes Sociales/whatsapp.png' %}" width="50"></a>
         <div class="py-3">
           <p>Reclamos@pbuild.com</p>
-          <a href="contacto.html">Contactanos</a>
+          <a href="{% url 'contacto' %}">Contactanos</a>
         </div>
       </div>
       <div class="col-sm-2">

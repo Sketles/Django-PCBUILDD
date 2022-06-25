@@ -74,7 +74,7 @@
               </div>
 
               <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                  <div class="d-flex flex-row"><img class="rounded" src="img-items-componentes/gabinete2.jpg" width="50">
+                  <div class="d-flex flex-row"><img class="rounded" src="{% static 'core/Imagenes/img-items-componentes/gabinete2.jpg' %}" width="50">
                       <div class="ml-2">
                         <span class="font-weight-bold d-block">GABINETE COUGAR PRO XL MASTER ATX</span>
                         <span class="spec">Negro con blanco marca cougar ATX RGB</span>
@@ -89,7 +89,7 @@
 
 
               <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                  <div class="d-flex flex-row"><img class="rounded" src="img-items-procesadores/corei5.jpg" width="50">
+                  <div class="d-flex flex-row"><img class="rounded" src="{% static 'core/Imagenes/img-items-procesadores/corei5.jpg' %}" width="50">
                       <div class="ml-2">
                         <span class="font-weight-bold d-block">PROCESADOR INTEL CORE I5-10400F</span>
                         <span class="spec">6 Nucleos, 12 hilos 4.1 GHZ Intel</span>
@@ -105,7 +105,7 @@
 
               <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
                   <div class="d-flex flex-row">
-                    <img class="rounded" src="img-items-memoriasram/Kit-Memoria-RAM-Crucial-Ballistix-16GB-2x-8GB-DDR4-3200MHz-CL16-RGB-2-300x300.png" width="50">
+                    <img class="rounded" src="{% static 'core/Imagenes/img-items-memoriasram/ram.jpg' %}" width="50">
                     <div class="ml-2">
                       <span class="font-weight-bold d-block">KIT MEMORIA RAM KINGSTOM 32GB</span>
                       <span class="spec">32GB 3200mhz las mas rapidas </span>
@@ -129,27 +129,27 @@
           <div class="payment-info">
               <div class="d-flex justify-content-between align-items-center">
                 <span><h5>Formas de Pago</h5></span>
-                <img class="rounded" src="Logos-img/logoprincipal.png" width="30">
+                <img class="rounded" src="{% static 'core/Imagenes/Logos-img/logoprincipal.png' %}" width="30">
               </div>
 
               <label class="radio"> 
                 <input type="radio" name="card" value="payment" checked>
-                <span><img width="30" src="Logos-img/Pagos/pay-visa.png"/></span> 
+                <span><img width="30" src="{% static 'core/Imagenes/Logos-img/Pagos/pay-visa.png' %}"/></span> 
               </label>
 
               <label class="radio"> 
                 <input type="radio" name="card" value="payment"> 
-                <span><img width="30" src="Logos-img/Pagos/pay-master.png"/></span> 
+                <span><img width="30" src="{% static 'core/Imagenes/Logos-img/Pagos/pay-master.png' %}"/></span> 
               </label>
 
               <label class="radio"> 
                 <input type="radio" name="card" value="payment"> 
-                <span><img width="30" src="Logos-img/Pagos/pay-khipu.png"/></span> 
+                <span><img width="30" src="{% static 'core/Imagenes/Logos-img/Pagos/pay-khipu.png' %}"/></span> 
               </label>
 
               <label class="radio"> 
                 <input type="radio" name="card" value="payment"> 
-                <span><img width="30" src="Logos-img/Pagos/pay-webpay.png"/></span> 
+                <span><img width="30" src="{% static 'core/Imagenes/Logos-img/Pagos/pay-webpay.png' %}"/></span> 
               </label>
               
 
@@ -175,7 +175,7 @@
               <div class="d-flex justify-content-between information"><span>Total</span><span>$190.990</span></div>
               
 
-              <a href="pagoaprobado.html">
+              <a href="{% url 'pagoaprobado' %}">
                 <button class="btn btn-success btn-block d-flex justify-content-between mt-3" type="button">
                   <span><center>$190.990</center></span>
                   <span>Pagar
@@ -204,26 +204,26 @@
         <!--ESPACIO-->
       </div>
       <div class="col-sm-2">
-        <img src="logos-img/logoprincipal.png" width="200">
+        <img src="{% static 'core/Imagenes/logos-img/logoprincipal.png' %}" width="200">
         <p class="py-5">Encuentra los mejores artículos Gamers para potenciar tu PC. Compra Online y recíbelo en tu domicilio!</p>
       </div>
 
       <div class="col-sm-2">
         <h5 class="py-5">Informacion</h5>
-        <a href="quienes-somos.html"><p class="colorchange">Quienes Somos</p></a>
-        <a href="termino-y-condiciones.html"><p class="colorchange">Terminos y condiciones</p></a>
-        <a href="politica-de-reembolso.html"><p class="colorchange">Politica de reembolso</p></a>
+        <a href="{% url 'quienessomos' %}"><p class="colorchange">Quienes Somos</p></a>
+        <a href="{% url 'politicadereembolso' %}"><p class="colorchange">Terminos y condiciones</p></a>
+        <a href="{% url 'politicadereembolso' %}"><p class="colorchange">Politica de reembolso</p></a>
 
         
       </div>
 
       <div class="col-sm-2">
         <h5 class="py-5">Nuestros Productos</h5>
-        <a href="discossd.html"><p class="colorchange">SSD</p></a>
-        <a href="memorias-ram.html"><p class="colorchange">Memorias</p></a>
-        <a href="placas-madres.html"><p class="colorchange">Placas Madre</p></a>
-        <a href="procesadores.html"><p class="colorchange">Procesadores</p></a>
-        <a href="tarjetasdevideo.html"><p class="colorchange">Tarjetas de Video</p></a>
+        <a href="{% url 'discossd' %}"><p class="colorchange">SSD</p></a>
+        <a href="{% url 'memoriasram' %}"><p class="colorchange">Memorias</p></a>
+        <a href="{% url 'placasmadres' %}"><p class="colorchange">Placas Madre</p></a>
+        <a href="{% url 'procesadores' %}"><p class="colorchange">Procesadores</p></a>
+        <a href="{% url 'tarjetasdevideo' %}"><p class="colorchange">Tarjetas de Video</p></a>
       </div>
 
       <div class="col-sm-2">
@@ -233,7 +233,7 @@
         <a href="https://www.whatsapp.com/?lang=es"><img src="{% static 'core/Imagenes/Logos-img/Redes Sociales/whatsapp.png' %}" width="50"></a>
         <div class="py-3">
           <p>Reclamos@pbuild.com</p>
-          <a href="contacto.html">Contactanos</a>
+          <a href="{% url 'contacto' %}">Contactanos</a>
         </div>
       </div>
       <div class="col-sm-2">
@@ -251,7 +251,6 @@
         </div>
         </div>
     </div>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

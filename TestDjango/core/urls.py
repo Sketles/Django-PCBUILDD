@@ -17,13 +17,13 @@ urlpatterns = [
     path('gabinetes',gabinetes,name="gabinetes"),
     path('memoriasram',memoriasram,name="memoriasram"),
     path('pagoaprobado',pagoaprobado,name="pagoaprobado"),
-    path('placas-madres',placasmadres,name="placasmadres"),
-    path('politica-de-rembolso',politicadereembolso,name="politicaderembolso"),
+    path('placasmadres',placasmadres,name="placasmadres"),
+    path('politicadereembolso',politicadereembolso,name="politicadereembolso"),
     
     path('procesadores',procesadores,name="procesadores"),
     path('quienessomos',quienessomos,name="quienessomos"),
     path('software',software,name="software"),
     path('tarjetasdevideo',tarjetasdevideo,name="tarjetasdevideo"),
-    path('termino-y-condiciones',terminoycondiciones,name="terminoycondiciones")
+    path('terminoycondiciones',terminoycondiciones,name="terminoycondiciones")
 ]
 
